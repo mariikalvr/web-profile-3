@@ -3,7 +3,7 @@
 .container {
   display: grid;
   background-color:#1D2254;
-  grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+  grid-template-columns: 1fr 1fr; 
   gap: 29px;
   width: 1829px;
   height: 1696px;
@@ -300,29 +300,39 @@
     transition: transform 0.3s ease;
 }
 @media screen and (max-width: 716px) {
+  
   .container {
     grid-template-columns: 1fr;
     width: 100%;
     height: auto;
     padding: 20px;
-    gap: 20px;
     border-radius: 16px;
+    gap: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+  
+  .stacked1, .stacked2 {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
   }
 
   .circle-image {
-    width: 200px;
-    height: 200px;
+    width: 409px;
+    height: 409px;
     margin: 24px auto;
   }
 
   .profile-name {
     font-size: 32px;
+    text-align: center;
   }
 
   .info-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
     margin-top: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
   }
 
   .info-label {
@@ -340,7 +350,9 @@
   .core_needs,
   .frustrations,
   .brands {
-    padding: 20px;
+    padding: 48px;
+     box-sizing: border-box;
+    width: 100%;
   }
 
   .dot {
@@ -379,11 +391,13 @@
   .platform {
     padding: 16px;
     gap: 16px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .items-container {
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
@@ -391,23 +405,36 @@
     width: 80px;
     height: 70px;
   }
+   .item {
+    flex: 0 0 calc(25% - 12px);
+  }
 
   .item p {
     font-size: 16px;
   }
 
   .images_brands {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 24px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .images_brands .items {
+    flex: 0 0 auto;
   }
 
   .images_brands img {
-    width: 80px;
-    height: 60px;
+    width: 110px;
+    height: 95px;
+    object-fit: contain;
   }
-
   .brands {
     max-height: none;
+    object-fit: contain ;
+
   }
 }
