@@ -319,8 +319,9 @@
   }
 
   .circle-image {
-    width: 409px;
-    height: 409px;
+    max-width: 409px;
+    max-height: 409px;
+    width:100%;
     margin: 24px auto;
   }
 
@@ -402,8 +403,9 @@
   }
 
   .item img {
-    width: 80px;
-    height: 70px;
+    max-width: 80px;
+    max-height: 70px;
+    width:100%;
   }
    .item {
     flex: 0 0 calc(25% - 12px);
@@ -428,8 +430,9 @@
   }
 
   .images_brands img {
-    width: 110px;
-    height: 95px;
+    max-width: 110px;
+    max-height: 95px;
+    width:100%;
     object-fit: contain;
   }
   .brands {
