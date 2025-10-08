@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
+body {
+  font-family: "Manrope", sans-serif;
+}
 .container {
   display: grid;
   background-color:#1D2254;
@@ -23,7 +25,6 @@
 
 
 .profile-name{
-    font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -52,7 +53,6 @@
 .info-label {
   text-transform: uppercase;
   color: #A3A3A3;
-  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -62,7 +62,6 @@
 .info-value {
   color: #3A3D5B;
   text-align: left;
-  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -82,7 +81,6 @@
 
 .dot {
     color: #6A24FF;
-    font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -95,7 +93,6 @@
 .pquote {
     color: #3A3D5B;
     text-align: left;
-    font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -108,7 +105,6 @@
 .titleh2{
   color: #1D2254;
   text-align: left;
-  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -145,7 +141,6 @@
     padding: 8px 24px;
     background: #F2F2F2;
     border-radius: 56px;
-    font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -169,7 +164,6 @@
 .stacked2-text{
   color: #3A3D5B;
   text-align: left;
-  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -259,7 +253,6 @@
 
 .item p {
     margin: 0;
-    font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
